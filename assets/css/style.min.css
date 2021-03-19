@@ -179,7 +179,6 @@ figure figcaption {
 }
 #mypage-aside #mypage-main-menu ul li a:hover {
     text-decoration: none;
-    color: #000 
 }
 #mypage-aside #mypage-main-menu ul li a:hover:after {
     visibility: visible;
