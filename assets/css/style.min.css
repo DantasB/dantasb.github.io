@@ -1524,7 +1524,7 @@ body.offcanvas #mypage-main, body.offcanvas .mypage-nav-toggle {
     content: '';
     width: 30px;
     height: 2px;
-    background: #000;
+    background: #fff;
     position: absolute;
     left: 0;
     -webkit-transition: .2s;
