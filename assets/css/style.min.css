@@ -1511,11 +1511,11 @@ body.offcanvas #mypage-main, body.offcanvas .mypage-nav-toggle {
     zoom: 1;
     width: 30px;
     height: 2px;
-    color: #000;
+    color: #fff;
     font: bold 14px/.4 Helvetica;
     text-transform: uppercase;
     text-indent: -55px;
-    background: #000;
+    background: #fff;
     -webkit-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
     transition: all .2s ease-out 
