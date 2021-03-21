@@ -1495,10 +1495,10 @@ body.offcanvas #mypage-main, body.offcanvas .mypage-nav-toggle {
     text-decoration: none 
 }
 .mypage-nav-toggle.active i::after, .mypage-nav-toggle.active i::before {
-    background: #000 
+    background: #fff
 }
 .mypage-nav-toggle.dark.active i::after, .mypage-nav-toggle.dark.active i::before {
-    background: #000 
+    background: #fff
 }
 .mypage-nav-toggle:active, .mypage-nav-toggle:focus, .mypage-nav-toggle:hover {
     outline: 0;
