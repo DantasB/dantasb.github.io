@@ -19,7 +19,6 @@
    <script type="module">
 
       import * as THREE from 'https://threejs.org/build/three.module.js';
-      import Stats from 'https://threejs.org/examples/jsm/libs/stats.module.js';
 
       import { EffectComposer } from 'https://threejs.org/examples/jsm/postprocessing/EffectComposer.js';
       import { RenderPass } from 'https://threejs.org/examples/jsm/postprocessing/RenderPass.js';
@@ -39,7 +38,6 @@
 
       const clock = new THREE.Clock();
 
-      let stats;
 
       init();
       animate();
@@ -59,7 +57,7 @@
 
          const loader = new OBJLoader();
 
-         loader.load('models/obj/male02/male02.obj', function (object) {
+         loader.load('https://threejs.org/examples/models/obj/male02/male02.obj', function (object) {
 
             const positions = combineBuffer(object, 'position');
 
@@ -70,7 +68,7 @@
 
          });
 
-         loader.load('models/obj/female02/female02.obj', function (object) {
+         loader.load('https://threejs.org/examples/models/obj/female02/female02.obj', function (object) {
 
             const positions = combineBuffer(object, 'position');
 
@@ -115,9 +113,6 @@
          composer.addPass(effectFilm);
          composer.addPass(effectFocus);
 
-         //stats
-         stats = new Stats();
-         container.appendChild(stats.dom);
 
          window.addEventListener('resize', onWindowResize);
 
@@ -226,8 +221,6 @@
 
          requestAnimationFrame(animate);
          render();
-         stats.update();
-
       }
 
       function render() {
