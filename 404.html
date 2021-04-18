@@ -18,19 +18,16 @@
          
          import {EffectComposer} from 'https://threejs.org/examples/jsm/postprocessing/EffectComposer.js';
          import {RenderPass} from 'https://threejs.org/examples/jsm/postprocessing/RenderPass.js';
-         import {GlitchPass} from 'https://threejs.org/examples/jsm/postprocessing/GlitchPass.js';
          
          var camera, scene, renderer, composer;
          var object, light;
-         
-         var glitchPass;
-         
+                  
          init();
          animate();
          
          function init() {
          
-             renderer = new THREE.WebGLRenderer();
+         renderer = new THREE.WebGLRenderer();
          renderer.setPixelRatio( window.devicePixelRatio );
          renderer.setSize( window.innerWidth, window.innerHeight );
          document.body.appendChild( renderer.domElement );
@@ -84,7 +81,7 @@
          
          function onWindowResize() {
          
-             camera.aspect = window.innerWidth / window.innerHeight;
+         camera.aspect = window.innerWidth / window.innerHeight;
          camera.updateProjectionMatrix();
          
          renderer.setSize( window.innerWidth, window.innerHeight );
