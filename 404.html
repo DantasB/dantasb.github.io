@@ -68,13 +68,7 @@
          
          composer = new EffectComposer( renderer );
          composer.addPass( new RenderPass( scene, camera ) );
-         
-         glitchPass = new GlitchPass();
-         composer.addPass( glitchPass );
-         
-         
-         //
-         
+
          window.addEventListener( 'resize', onWindowResize, false );
          
          }
